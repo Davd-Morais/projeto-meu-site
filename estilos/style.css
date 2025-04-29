@@ -10,7 +10,8 @@
 }
 
 body {
-    background-image: url(../imagens/background.png);
+    background: black url(../imagens/background.png) center center no-repeat fixed;
+    background-size: cover;
     font-family: var(--fonte-padrao);
 }
 
