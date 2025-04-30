@@ -9,13 +9,21 @@
 <body>
     <header>
         <h1>David Morais</h1>
+
+        <button class="menu-hamburguer">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+
         <nav>
             <ul>
-                <a href="#">SOBRE</a>
-                <a href="#">PORTFÓLIO</a>
-                <a href="#">CONTATO</a>
+                <li><a href="#">SOBRE</a></li>
+                <li><a href="#">PORTFÓLIO</a></li>
+                <li><a href="#">CONTATO</a></li>
             </ul>
         </nav>
+
     </header>
     
     <main>
@@ -28,5 +36,16 @@
             </picture>
         </div>
     </main>
+
+    <script>
+        // Seleciona o botão de hambúrguer e o menu
+        const menuHamburguer = document.querySelector('.menu-hamburguer');
+        const nav = document.querySelector('nav');
+
+        // Quando clicar no botão, alterna a visibilidade do menu
+        menuHamburguer.addEventListener('click', () => {
+            nav.classList.toggle('ativo'); // Adiciona ou remove a classe 'ativo'
+        });
+    </script>
 </body>
 </html>
