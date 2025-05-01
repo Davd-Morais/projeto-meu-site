@@ -11,10 +11,11 @@
     padding: 0px;
 }
 
-body {
+html, body {
     background: black url(../imagens/background.png) center center no-repeat fixed;
     background-size: cover;
     font-family: var(--fonte-padrao);
+    min-width: 100%;
 }
 
 header {
@@ -23,14 +24,17 @@ header {
     justify-content: space-between;
     align-items: center;
     padding: 20px;
-    margin: 0px 30px 0px 30px;
+    margin: 0px 30px;
 }
 
+header > h1 {
+    font-size: clamp(24px, 8vw, 50px); /* ajusta conforme o tamanho da tela */
+}
 
 nav {
     display: flex;
     background-color: rgba(0, 0, 0, 0.95);
-    padding: 5px;
+    padding: 5px 15px;
     border-radius: 8px;
     z-index: 10;
 }
@@ -38,31 +42,29 @@ nav {
 
 nav ul {
     display: flex;
-    gap: 30px;
+    gap: 5px;
     list-style: none;
-    font-size: 20px;
     margin: 0px;
     padding: 0px;
+    font-size: clamp(14px, 2vw, 20px); /* tamanho responsivo */
 }
 
 
 nav a {
     font-family: var(--fonte-padrao);
-    font-weight: lighter;
+    font-weight: bold;
     text-decoration: none;
     color: white;
-    padding: 5px;
-    margin: 0px 5px 0px 5px;
+    padding: 5px 10px;
+    border-radius: 5px;
 }
 
 nav a:hover {
     background-color: #D2D6D9;
     color: #0D0D0D;
-    padding: 5px;
-    margin: 0px 5px 0px 5px;
-    border-radius: 5px;
     transition-duration: 0.5s;
 }
+
 
 main {
     height: 100vh;
