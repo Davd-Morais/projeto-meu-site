@@ -1,9 +1,9 @@
 @charset "UTF-8";
 
-
+@import url('https://fonts.googleapis.com/css2?family=Poiret+One&display=swap');
 
 :root {
-    --fonte-padrao: "Arial", Verdana, Helvetica, sans-serif;
+    --fonte-padrao: "Poiret One", sans-serif;
 }
 
 * {
@@ -11,80 +11,100 @@
     padding: 0px;
 }
 
-html, body {
-    background: black url(../imagens/background.png) center center no-repeat fixed;
-    background-size: cover;
-    font-family: var(--fonte-padrao);
-    min-width: 100%;
+body{
+    background-color: black;
+    height: 100%;
+    overflow-x: hidden;
 }
 
 header {
-    color: white;
+    padding: 25px;
+    padding-left: 45px;
     display: flex;
     justify-content: space-between;
-    align-items: center;
-    padding: 20px 0px 20px 20px;
-    margin: 0px 30px;
 }
 
-header > h1 {
-    font-size: clamp(24px, 8vw, 50px); /* ajusta conforme o tamanho da tela */
+.logo-home, img {
+    width: 150px;
 }
 
-nav {
+.nav-container, ul, a{
+    gap: 60px;
     display: flex;
-    padding: 5px 5px;
-    border-radius: 8px;
-    z-index: 10;
-}
-
-
-nav ul {
-    display: flex;
-    gap: 5px;
     list-style: none;
-    margin: 0px;
-    padding: 0px;
-    font-size: clamp(14px, 2vw, 20px); /* tamanho responsivo */
-}
-
-
-nav a {
-    font-family: var(--fonte-padrao);
-    font-weight: bold;
-    text-decoration: none;
+    align-items: center;
     color: white;
-    padding: 5px 10px;
-    border-radius: 5px;
+    text-decoration: none;
+    font-size: 1.1em;
+    font-family: var(--fonte-padrao);
+    text-transform: uppercase;
 }
 
 nav a:hover {
-    background-color: #D2D6D9;
-    color: #0D0D0D;
-    transition-duration: 0.5s;
+    color: lightsalmon;
+    transform: translate(-3px, -3px);
+    transition: transform 0.3s ease; 
 }
 
-@media (max-width: 600px) {
-    nav ul {
-        display: block;
-        
+video#fundo-video {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -2; /* deixa o vídeo atrás do conteúdo */
+}
+
+ .degrade {
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: linear-gradient(to top, black, rgba(0, 0, 0, 0));
+      z-index: -1;
+      pointer-events: none; /* permite clicar nos elementos abaixo normalmente */
     }
 
-    nav ul a {
-        display: block;
-        margin-bottom: 10px;
-        text-align: right;
+    .conteudo {
+      position: relative;
+      z-index: 1;
+      color: white;
+      text-align: center;
+      margin-top: 60vh;
+      font-family: var(--fonte-padrao);
+      line-height: 1.5em;
     }
-}
 
-main {
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
+    .conteudo h1 {
+        font-size: 3em;
 
-.imagens {
-    max-width: 100%;
-    height: auto;
-}
+    }
+
+    .conteudo p {
+        font-family: Arial, Helvetica, sans-serif;
+        margin-top: 20px;
+    }
+
+   .botao-laranja {
+        display: inline-block;
+        margin-top: 25px;
+        padding: 12px 24px;
+        background-color: rgb(187, 69, 1);
+        color: white;
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: bold;
+        text-decoration: none;
+        letter-spacing: 10px; /* aumenta o espaço entre as letras */
+        border-radius: 50px;
+        box-shadow: 0px 0px 50px rgba(255, 153, 0, 0.719); /* brilho ao redor */
+        transition: all 0.3s ease;
+    }
+
+    .botao-laranja:hover {
+        background-color: rgb(187, 69, 1);
+        box-shadow: 0px 0px 50px rgba(255, 153, 0, 0.719);
+        transform: scale(1.15);
+    }
+

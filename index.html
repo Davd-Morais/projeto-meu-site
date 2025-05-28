@@ -3,33 +3,43 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>David Morais</title>
+    <title>David Morais TATTOO</title>
     <link rel="stylesheet" href="estilos/style.css">
 </head>
 <body>
     <header>
-        <h1>David Morais</h1>
-        
-        <nav>
-            <ul>
-                <li><a href="#">SOBRE</a></li>
-                <li><a href="#">PORTFÓLIO</a></li>
-                <li><a href="#">CONTATO</a></li>
-            </ul>
-        </nav>
-
+        <div class="logo-home">
+            <a href="index.html" class="logo">
+                <img src="imagens/logo-home.png" alt="David Morais TATTOO">
+            </a>
+        </div>
+        <div class="nav-container">
+            <nav>
+                <ul>
+                    <li><a href="index.html">Início</a></li>
+                    <li><a href="portfolio.html">Portfólio</a></li>
+                    <li><a href="sobre.html">Sobre</a></li>
+                    <li><a href="contato.html">Contato</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
-    
+
     <main>
-        <div class="imagens">
-            <picture>
-                <source media="(max-width: 800px)" srcset="imagens/eu-home-mobile.png" width="300">
-                <source media="(max-width: 1250px)" srcset="imagens/eu-home-pequena.png">
-                <source media="(max-width: 1920px)" srcset="imagens/eu-home-media.png">
-                <img src="imagens/eu-home.png" alt="foto de David Morais">
-            </picture>
+        <video id="fundo-video" autoplay muted loop playsinline>
+            <source src="videos/video-home.mp4" type="video/mp4">
+            Seu navegador não suporta o vídeo.
+            
+        </video>
+
+        <div class="degrade"></div>
+
+        <div class="conteudo">
+            <h1>Tatuagem é arte. E seu corpo, a tela.</h1>
+            <p>Transforme sua pele em uma obra-prima com <strong>David Morais</strong>. <br> Explore nosso portfólio e agende sua sessão hoje mesmo!</p>
+
+            <a href="#" target="_blank" class="botao-laranja">Ver Portfólio</a>
         </div>
     </main>
-
 </body>
 </html>
