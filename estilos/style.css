@@ -11,6 +11,10 @@
     padding: 0px;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body{
     background-color: black;
     height: 100%;
@@ -115,7 +119,7 @@ video#fundo-video {
 
     div#sobre section {
         padding: 50px;
-        background-color: black;
+        background: linear-gradient(to top, black, rgba(0, 0, 0, 0));
         display: flex;
         justify-content: space-between;
         flex-direction: column;
@@ -146,5 +150,6 @@ video#fundo-video {
         font-family: Arial, sans-serif;
         font-size: clamp(rem, 1.5vw, 1.5rem); /* mínimo 1rem, ideal 1.5vw, máximo 1.5rem */
         line-height: 1.6em;
+        text-align: justify;
     }
 
