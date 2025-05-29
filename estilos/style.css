@@ -89,7 +89,9 @@ video#fundo-video {
 
     .conteudo p {
         font-family: Arial, Helvetica, sans-serif;
-        margin-top: 20px;
+        font-size: clamp(2rem, 1vw, 1.5rem);
+        line-height: 1.3em;
+        padding: 30px;
     }
 
    .botao-laranja {
@@ -120,8 +122,6 @@ video#fundo-video {
     div#sobre section {
         padding: 50px;
         background: linear-gradient(to top, black, rgba(0, 0, 0, 0));
-        display: flex;
-        justify-content: space-between;
         flex-direction: column;
     }
 
@@ -153,3 +153,35 @@ video#fundo-video {
         text-align: justify;
     }
 
+    #portfolio {
+        background-color: black;
+        display: flex;
+        flex-direction: column;
+        padding: 60px 20px;
+        text-align: center;
+    }
+
+    #portfolio h2 {
+        font-size: clamp(2rem, 2vw, 1.5rem);
+        font-family: var(--fonte-padrao);
+        margin-bottom: 40px;
+    }
+
+    .galeria {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap; /* permite que as imagens se ajustem em várias linhas */
+        gap: 30px;
+    }
+
+    .galeria img {
+        
+        width: 300px;
+        height: auto;
+        border-radius: 10px;
+        transition: transform 0.3s ease;
+    }
+
+    .galeria img:hover {
+        transform: scale(1.05);
+    }
