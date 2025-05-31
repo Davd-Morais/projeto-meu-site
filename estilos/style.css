@@ -77,7 +77,7 @@ video#fundo-video {
       z-index: 1;
       color: white;
       text-align: center;
-      margin-top: 60vh;
+      margin-top: 50vh;
       font-family: var(--fonte-padrao);
       line-height: 1.5em;
     }
@@ -89,9 +89,9 @@ video#fundo-video {
 
     .conteudo p {
         font-family: Arial, Helvetica, sans-serif;
-        font-size: clamp(2rem, 1vw, 1.5rem);
+        font-size: clamp(1.2rem, 2vw, 3rem);
         line-height: 1.3em;
-        padding: 30px;
+        padding: 20px;
     }
 
    .botao-laranja {
@@ -120,13 +120,14 @@ video#fundo-video {
     }
 
     div#sobre section {
+        margin-top: 15vh;
         padding: 50px;
         background: linear-gradient(to top, black, rgba(0, 0, 0, 0));
         flex-direction: column;
     }
 
     div#sobre section h2 {
-        font-size: clamp(2rem, 2vw, 1.5rem);
+        font-size: 5vw;
         margin-bottom: 20px;
         text-align: center;
         font-family: var(--fonte-padrao);
@@ -148,7 +149,7 @@ video#fundo-video {
     div#info {
         width: 50vw;
         font-family: Arial, sans-serif;
-        font-size: clamp(rem, 1.5vw, 1.5rem); /* mínimo 1rem, ideal 1.5vw, máximo 1.5rem */
+        font-size: clamp(1.3rem, 1.5vw, 1.5rem); /* mínimo 1rem, ideal 1.5vw, máximo 1.5rem */
         line-height: 1.6em;
         text-align: justify;
     }
@@ -162,7 +163,7 @@ video#fundo-video {
     }
 
     #portfolio h2 {
-        font-size: clamp(2rem, 2vw, 1.5rem);
+        font-size: 5vw;
         font-family: var(--fonte-padrao);
         margin-bottom: 40px;
     }
@@ -185,3 +186,63 @@ video#fundo-video {
     .galeria img:hover {
         transform: scale(1.05);
     }
+
+    #contato {
+        justify-content: center;
+        text-align: center;
+    }
+
+    #contato h2 {
+        font-size: 5vw;
+        font-family: var(--fonte-padrao);
+        margin: 50px 0px 20px 0px;
+        
+    }
+
+    #contato p {
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: clamp(1.2rem, 2vw, 3rem);
+        line-height: 1.3em;
+        padding: 20px;
+    }
+
+   #contato img {
+        width: 50px;
+        height: 50px;
+        margin: 10px;
+        transition: transform 0.3s ease;
+    }
+
+    #contato img:hover {
+        transform: scale(1.2);
+    }
+
+    .contato-lista {
+        display: flex;
+        justify-content: center;
+        gap: 60px;
+        flex-wrap: wrap;
+        list-style: none;
+        padding: 0;
+        margin-top: 20px;
+    }
+
+    .contato-lista li {
+        display: flex;
+        align-items: center; /* Alinha o ícone com o texto verticalmente */
+        gap: 10px;
+        font-family: var(--fonte-padrao);
+        font-size: 1.1em;
+        color: white;
+    }
+
+    .contato-lista li img {
+        width: 24px;
+        height: 24px;
+        object-fit: contain;
+    }
+
+
+    
+
+   
